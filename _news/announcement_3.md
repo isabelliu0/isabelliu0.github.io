@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2025-04-15
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Our paper "Flash STU: Fast Spectral Transform Units" has been accepted to IEEE Conference on Decision and Control (CDC) 2025!

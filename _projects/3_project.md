@@ -1,81 +1,36 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
+title: SLAP - Shortcut Learning for Abstract Planning
+description: Learning physical improvisations to enhance task and motion planners
 img: assets/img/7.jpg
-redirect: https://unsplash.com
 importance: 3
-category: work
+category: research
+related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+**Princeton PRPL Lab** | September 2024 - May 2025
+**Advisors:** Professor Tom Silver and Professor Benjamin Eysenbach
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## Overview
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+SLAP (Shortcut Learning for Abstract Planning) is a generic algorithm that automatically improves existing task and motion planners (TAMPs) by discovering new physical improvisations through model-free reinforcement learning. The key innovation is learning non-obvious physical behaviors that achieve tasks faster or handle more complex scenarios than traditional symbolic planning alone.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## Key Contributions
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+- **Generic TAMP Enhancement:** Designed an algorithm that works with any existing TAMP system, automatically discovering physical "shortcuts" that improve execution time and robustness.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+- **Model-Free Discovery:** Uses reinforcement learning to discover physical improvisations without requiring explicit physical models, enabling adaptation to complex dynamics and multi-object interactions.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+- **Extensive Evaluation:** Conducted experiments across four PyBullet environments and one custom 2D TAMP environment, demonstrating consistent improvements over baseline planners.
 
-{% raw %}
+- **Robustness Analysis:** Investigated SLAP's performance in challenging scenarios that violate standard TAMP assumptions, including stochasticity, partial observability, and continuous goal specifications.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+## Technical Approach
 
-{% endraw %}
+The method combines symbolic task planning with learned low-level policies that can execute "improvised" actions—physical behaviors that accomplish goals through dynamics exploitation rather than purely symbolic reasoning. For example, learning to push multiple objects simultaneously or using momentum to overcome obstacles.
+
+## Impact
+
+This work bridges the gap between classical symbolic planning and modern learning-based approaches, showing how they can be combined synergistically. The automatic discovery of physical improvisations enables robots to be more efficient and adaptive in real-world scenarios.
+
+**Status:** Under review for ICLR 2026

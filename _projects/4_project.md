@@ -1,80 +1,36 @@
 ---
 layout: page
-title: project 4
-description: another without an image
+title: Flash STU - Fast Spectral Transform Units
+description: State-of-the-art hybrid architecture for sequence modeling
 img:
-importance: 3
-category: fun
+importance: 4
+category: research
+related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+**Princeton Hazan Lab** | May 2024 - January 2025
+**Advisor:** Professor Elad Hazan
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## Overview
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Flash Spectral Transform Units (STU) represents a breakthrough in sequence modeling, proposing a hybrid STU-Attention architecture that achieves state-of-the-art performance in language modeling while maintaining computational efficiency. This work was developed in collaboration with the Hazan Lab and has been accepted to IEEE Conference on Decision and Control (CDC) 2025.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## Key Contributions
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+- **Hybrid Architecture:** Designed Flash STU, a model combining spectral transform units with attention mechanisms that outperforms both pure Transformers and leading state space models like Mamba-2 and Mamba-Attention hybrids on language modeling benchmarks.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+- **Computational Optimization:** Proposed and implemented optimized tensordot approximations for convolution operations with k fixed spectral filters, reducing computational complexity by a factor of k—a critical improvement for scaling to longer sequences.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+- **Open-Source Implementation:** Released the Flash STU architecture as an open-source library, enabling the research community to build upon this work.
 
-{% raw %}
+- **Theoretical Analysis:** Analyzed STU's optimization behavior and convex parameterizations across diverse tasks including language modeling, robotics control, and synthetic dynamical systems, providing insights into when and why the architecture excels.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+## Technical Innovation
 
-{% endraw %}
+The key innovation lies in efficiently combining the inductive biases of spectral methods (which excel at capturing periodic and structured patterns) with the flexibility of attention mechanisms. The computational optimizations make this hybrid approach practical for real-world applications.
+
+## Impact
+
+This work contributes to the ongoing evolution of sequence models beyond pure Transformers, showing that hybrid architectures can leverage the complementary strengths of different modeling paradigms. The results have implications for robotics (where sequence modeling is essential for control and planning) and for understanding the fundamental tradeoffs in neural architecture design.
+
+**Status:** Accepted at IEEE CDC 2025
