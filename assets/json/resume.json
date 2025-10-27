@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Y. Isabel Liu",
-    "label": "PhD Applicant in Robotics",
+    "label": "",
     "image": "",
     "email": "isabel.liu@princeton.edu",
-    "phone": "(609) 921-5146",
+    "phone": "",
     "url": "https://isabelliu0.github.io",
-    "summary": "Computer Science undergraduate at Princeton University researching task and motion planning, robot learning, and dexterous manipulation. Applying to PhD programs in Robotics for Fall 2026.",
+    "summary": "",
     "location": {
       "address": "",
       "postalCode": "08544",
@@ -25,21 +25,20 @@
   "work": [
     {
       "name": "Princeton PRPL Lab",
-      "position": "Undergraduate Researcher",
+      "position": "Student Researcher",
       "url": "https://prpl.cs.princeton.edu/",
       "startDate": "2025-09-01",
       "endDate": "Present",
-      "summary": "Enhancing belief-space planning with LLM-guided exploration in partially observable task and motion planning. Advisor: Professor Tom Silver.",
+      "summary": "Belief-space planning with uncertainty-aware skill policies in partially observable task and motion planning. Advisor: Professor Tom Silver.",
       "highlights": [
-        "Develop LLM-based policy generation for belief-space TAMP using few-shot learning",
-        "Explore closed-loop policy synthesis leveraging common-sense reasoning"
+        "Develop conformant policies by augmenting skill policies with residual RL in POMDPs"
       ]
     },
     {
       "name": "Stanford IPRL Lab",
-      "position": "Summer Research Intern",
+      "position": "Visiting Student Researcher",
       "url": "https://iprl.stanford.edu/",
-      "startDate": "2025-05-01",
+      "startDate": "2025-06-01",
       "endDate": "Present",
       "summary": "Dexterous manipulation with touch sensing on high-precision peg assembly and disassembly. Advisor: Professor Jeannette Bohg.",
       "highlights": [
@@ -49,27 +48,26 @@
     },
     {
       "name": "Princeton PRPL Lab",
-      "position": "Undergraduate Researcher",
+      "position": "Student Researcher",
       "url": "https://prpl.cs.princeton.edu/",
-      "startDate": "2024-09-01",
+      "startDate": "2024-10-01",
       "endDate": "2025-05-01",
       "summary": "Automated learning of robot physical improvisations under TAMP framework. Advisors: Professor Tom Silver and Professor Benjamin Eysenbach.",
       "highlights": [
-        "Designed SLAP algorithm to improve TAMP through model-free learning of physical improvisations",
-        "Conducted experiments over PyBullet and 2D TAMP environments",
-        "Paper submitted to ICLR 2026"
+        "Developed SLAP (Shortcut Learning for Abstract Planning), a 'plug-n-play' module to improve existing task and motion planners' plan execution efficiency",
+        "Automated the discovery of improvisational shortcuts through model-free learning by exploiting the hierarchical structure of TAMP abstractions"
       ]
     },
     {
-      "name": "Princeton Hazan Lab",
-      "position": "Undergraduate Researcher",
-      "url": "https://www.cs.princeton.edu/~ehazan/",
+      "name": "Google Deepmind @ Princeton",
+      "position": "Student Researcher",
+      "url": "https://sites.google.com/view/gbrainprinceton/projects/spectral-transformers/",
       "startDate": "2024-05-01",
       "endDate": "2025-01-01",
       "summary": "Computational optimizations for hybrid STU-Attention models. Advisor: Professor Elad Hazan.",
       "highlights": [
-        "Proposed Flash STU architecture achieving SOTA in language modeling",
-        "Optimized tensordot approximation reducing complexity by factor of k",
+        "Proposed Flash STU architecture achieving state-of-the-art performance in language modeling",
+        "Optimized tensordot-based convolution with k fixed spectral filters, reducing computational complexity by a factor of k.",
         "Paper accepted at IEEE CDC 2025"
       ]
     }
@@ -77,40 +75,27 @@
   "volunteer": [
     {
       "organization": "AI@Princeton Club",
-      "location": "Princeton, NJ",
+      "location": "",
       "position": "Co-President",
-      "url": "",
+      "url": "https://www.aiatprinceton.com/",
       "startDate": "2023-10-01",
       "endDate": "Present",
       "summary": "Lead student organization for AI research and education at Princeton.",
       "highlights": [
         "Organize annual AI Tiger Trek to San Francisco connecting students with AI researchers and startups",
-        "Lead weekly presentations and biweekly AI lunches with faculty"
+        "Lead weekly research talks and professor Q&As"
       ]
     },
     {
       "organization": "COS Undergraduate Course Assistant Program",
-      "location": "Princeton, NJ",
+      "location": "",
       "position": "Lab TA",
       "url": "",
       "startDate": "2023-09-01",
       "endDate": "Present",
       "summary": "Teaching assistant for Computer Science courses.",
       "highlights": [
-        "Hold office hours for 'Algorithms and Data Structures' and 'Introduction to Programming Systems'"
-      ]
-    },
-    {
-      "organization": "Center for Career Development",
-      "location": "Princeton, NJ",
-      "position": "Peer Career Advisor",
-      "url": "",
-      "startDate": "2023-01-01",
-      "endDate": "2025-05-01",
-      "summary": "Provide career advising to fellow students.",
-      "highlights": [
-        "Conducted one-on-one advising on resumes and internship search",
-        "Coordinated career workshops"
+        "Hold office hours for COS 226 'Algorithms and Data Structures' and COS 217 'Introduction to Programming Systems'"
       ]
     }
   ],
@@ -123,7 +108,6 @@
       "studyType": "Bachelor of Arts",
       "startDate": "2022-09-01",
       "endDate": "2026-05-01",
-      "score": "3.92",
       "courses": [
         "Advanced Algorithm Design",
         "Theoretical Machine Learning",
@@ -134,77 +118,12 @@
       ]
     }
   ],
-  "awards": [
-    {
-      "title": "Exemplary Independent Work Award",
-      "date": "2024-05-01",
-      "awarder": "Princeton CS Department",
-      "url": "",
-      "summary": "Awarded to 5 students by the Princeton Computer Science Department for exceptional independent research work."
-    }
-  ],
+  "awards": [],
   "certificates": [],
   "publications": [],
-  "skills": [
-    {
-      "name": "Programming Languages",
-      "level": "Advanced",
-      "icon": "fa-solid fa-code",
-      "keywords": [
-        "Python",
-        "Java",
-        "C++",
-        "C",
-        "OCaml",
-        "JavaScript",
-        "CSS",
-        "HTML"
-      ]
-    },
-    {
-      "name": "Research Areas",
-      "level": "Advanced",
-      "icon": "fa-solid fa-robot",
-      "keywords": [
-        "Task and Motion Planning",
-        "Robot Learning",
-        "Dexterous Manipulation",
-        "Reinforcement Learning",
-        "Machine Learning",
-        "Optimization"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
-      "language": "Chinese",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
-      "language": "French",
-      "fluency": "Proficient",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Robotics",
-      "icon": "fa-solid fa-robot",
-      "keywords": [
-        "Task and Motion Planning",
-        "Robot Learning",
-        "Dexterous Manipulation",
-        "Belief-Space Planning",
-        "Reinforcement Learning"
-      ]
-    }
-  ],
+  "skills": [],
+  "languages": [],
+  "interests": [],
   "references": [],
   "projects": []
 }

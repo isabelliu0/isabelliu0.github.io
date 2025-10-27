@@ -1,25 +1,29 @@
 ---
 ---
-
-@inproceedings{liu2025flashstu,
-  abbr={CDC},
-  title={Flash STU: Fast Spectral Transform Units},
-  author={Liu*, Y. Isabel and Nguyen*, Windsor and Devre, Yagiz and Dogariu, Evan and Majumdar, Anirudha and Hazan, Elad},
-  booktitle={IEEE Conference on Decision and Control},
-  year={2025},
-  bibtex_show={true},
-  selected={true},
-  abstract={We propose Flash Spectral Transform Units (STU), a hybrid STU-Attention model that achieves state-of-the-art performance in language modeling, outperforming Transformer and other leading state space models such as Mamba-2 and Mamba-Attention hybrid. We optimize tensordot approximation on the convolution operation of k fixed spectral filters that reduced computational complexity by a factor of k, and analyze STU's optimization behaviors and convex parameterizations on diverse sequence prediction tasks.},
-  annotation={* Equal contribution}
-}
-
 @article{liu2025slap,
   abbr={Preprint},
   title={SLAP: Shortcut Learning for Abstract Planning},
   author={Liu, Y. Isabel and Li, Bowen and Eysenbach, Benjamin and Silver, Tom},
-  journal={Under Review for ICLR 2026},
+  journal={Under Review},
   year={2025},
   bibtex_show={true},
   selected={true},
-  abstract={We design a generic and automatic algorithm, SLAP, to improve any existing task and motion planner (TAMP) by discovering new physical improvisations through model-free learning approach to achieve shorter execution time and adaptive ability to deal with more complex dynamics and multiple objects. We conduct extensive experiments over four PyBullet and one 2D TAMP environments designed from scratch, and investigate SLAP's robustness in environments that go beyond standard TAMP assumptions.}
+  abstract={Long-horizon decision-making with sparse rewards and continuous states and actions remains a fundamental challenge in AI and robotics. Task and motion planning (TAMP) is a model-based framework that addresses this challenge by planning hierarchically with abstract actions (options). These options are manually defined, limiting the agent to behaviors that we as human engineers know how to program (pick, place, move). In this work, we propose Shortcut Learning for Abstract Planning (SLAP), a method that leverages existing TAMP options to automatically discover new ones. Our key idea is to use model-free reinforcement learning (RL) to learn shortcuts in the abstract planning graph induced by the existing options in TAMP. Without any additional assumptions or inputs, shortcut learning leads to shorter solutions than pure planning, and higher task success rates than flat and hierarchical RL. Qualitatively, SLAP discovers dynamic physical improvisations (e.g., slap, wiggle, wipe) that differ significantly from the manually-defined ones. In experiments in four simulated robotic environments, we show that SLAP solves and generalizes to a wide range of tasks, reducing overall plan lengths by over 50\% and consistently outperforming planning and RL baselines.},
+  preview={slap-teaser.png}
+}
+
+@inproceedings{liu2025flashstu,
+  abbr={IEEE CDC},
+  title={Flash STU: Fast Spectral Transform Units},
+  author={Liu*, Y. Isabel and Nguyen*, Windsor and Devre, Yagiz and Dogariu, Evan and Majumdar, Anirudha and Hazan, Elad},
+  booktitle={IEEE Conference on Decision and Control},
+  year={2025},
+  note={To appear},
+  bibtex_show={true},
+  selected={true},
+  abstract={Recent advances in state-space model architectures have shown great promise for efficient sequence modeling, but challenges remain in balancing computational efficiency with model expressiveness. We propose the Flash STU architecture, a hybrid model that interleaves spectral state space model layers with sliding window attention, enabling scalability to billions of parameters for language modeling while maintaining a near-linear time complexity. We evaluate the Flash STU and its variants on diverse sequence prediction tasks, including linear dynamical systems, robotics control, and language modeling. We find that, given a fixed parameter budget, the Flash STU architecture consistently outperforms the Transformer and other leading state-space models such as S4 and Mamba-2.},
+  preview={spectral-filters.png},
+  arxiv={2409.10489},
+  pdf={https://arxiv.org/pdf/2409.10489.pdf},
+  code={https://github.com/hazan-lab/flash-stu/}
 }
