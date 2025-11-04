@@ -67,8 +67,7 @@
       "summary": "Computational optimizations for hybrid STU-Attention models. Advisor: Professor Elad Hazan.",
       "highlights": [
         "Proposed Flash STU architecture achieving state-of-the-art performance in language modeling",
-        "Optimized tensordot-based convolution with k fixed spectral filters, reducing computational complexity by a factor of k.",
-        "Paper accepted at IEEE CDC 2025"
+        "Optimized tensordot-based convolution with k fixed spectral filters, reducing computational complexity by a factor of k."
       ]
     }
   ],
@@ -83,7 +82,7 @@
       "summary": "Lead student organization for AI research and education at Princeton.",
       "highlights": [
         "Organize annual AI Tiger Trek to San Francisco connecting students with AI researchers and startups",
-        "Lead weekly research talks and professor Q&As"
+        "Lead weekly student research presentations and professor talks"
       ]
     },
     {

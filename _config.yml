@@ -5,9 +5,8 @@
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Y. Isabel
 middle_name:
-last_name: Liu
-contact_note: >
-  Feel free to reach out via email for research discussions or collaborations.
+last_name: Liu 刘亦颉
+contact_note: 
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Y. Isabel Liu - PhD Applicant in Robotics. Princeton University Computer Science undergraduate researching task and motion planning, dexterous manipulation, and learning for robotics.
 footer_text: >
@@ -313,6 +312,7 @@ filtered_bibtex_keywords:
     google_scholar_id,
     html,
     inspirehep_id,
+    note,
     pdf,
     poster,
     preview,
@@ -321,6 +321,7 @@ filtered_bibtex_keywords:
     supp,
     video,
     website,
+    year_display,
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
