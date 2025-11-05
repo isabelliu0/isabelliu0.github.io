@@ -22,11 +22,30 @@
       }
     ]
   },
+  "education": [
+    {
+      "institution": "Princeton University",
+      "location": "Princeton, NJ",
+      "url": "https://www.cs.princeton.edu/",
+      "studyType": "Computer Science - Bachelor of Arts",
+      "startDate": "2022-09-01",
+      "endDate": "2026-05-01",
+      "score": "3.92",
+      "courses": [
+        "Advanced Algorithm Design",
+        "Theoretical Machine Learning",
+        "Probability and Stochastic Systems",
+        "Computing and Optimization",
+        "Reinforcement Learning",
+        "Honors Linear Algebra"
+      ]
+    }
+  ],
   "work": [
     {
       "name": "Princeton PRPL Lab",
       "position": "Student Researcher",
-      "url": "https://prpl.cs.princeton.edu/",
+      "url": "https://prpl.group/",
       "startDate": "2025-09-01",
       "endDate": "Present",
       "summary": "Belief-space planning with uncertainty-aware skill policies in partially observable task and motion planning. Advisor: Professor Tom Silver.",
@@ -49,7 +68,7 @@
     {
       "name": "Princeton PRPL Lab",
       "position": "Student Researcher",
-      "url": "https://prpl.cs.princeton.edu/",
+      "url": "https://prpl.group/",
       "startDate": "2024-10-01",
       "endDate": "2025-05-01",
       "summary": "Automated learning of robot physical improvisations under TAMP framework. Advisors: Professor Tom Silver and Professor Benjamin Eysenbach.",
@@ -89,31 +108,12 @@
       "organization": "COS Undergraduate Course Assistant Program",
       "location": "",
       "position": "Lab TA",
-      "url": "",
+      "url": "https://introlab.cs.princeton.edu/",
       "startDate": "2023-09-01",
       "endDate": "Present",
       "summary": "Teaching assistant for Computer Science courses.",
       "highlights": [
         "Hold office hours for COS 226 'Algorithms and Data Structures' and COS 217 'Introduction to Programming Systems'"
-      ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "Princeton University",
-      "location": "Princeton, NJ",
-      "url": "https://www.princeton.edu/",
-      "area": "Computer Science",
-      "studyType": "Bachelor of Arts",
-      "startDate": "2022-09-01",
-      "endDate": "2026-05-01",
-      "courses": [
-        "Advanced Algorithm Design",
-        "Theoretical Machine Learning",
-        "Probability and Stochastic Systems",
-        "Computing and Optimization",
-        "Reinforcement Learning",
-        "Honors Linear Algebra"
       ]
     }
   ],
