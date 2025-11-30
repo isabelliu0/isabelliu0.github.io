@@ -31,4 +31,4 @@ My research focuses on **hierarchical planning and learning for real-world robot
 
 Currently, I am working with [Professor Tom Silver](https://tomsilver.github.io/) at Princeton's [PRPL Lab](https://prpl.group/) on belief-space planning in POMDPs. I am also collaborating with [Professor Jeannette Bohg](https://web.stanford.edu/~bohg/) at Stanford's [IPRL Lab](https://iprl.stanford.edu/) on dexterous manipulation with tactile sensing.
 
-Beyond research, I serve as Co-President of [AI@Princeton](https://www.aiatprinceton.com/), the university’s largest undergraduate AI community, dedicated to empowering students to engage in cutting-edge AI research and engineering.
+Beyond research, I am Co-President of [AI@Princeton](https://www.aiatprinceton.com/), the university’s largest undergraduate AI community, dedicated to empowering students to engage in cutting-edge AI research and engineering.
