@@ -8,12 +8,12 @@ middle_name:
 last_name: Liu 刘亦颉
 contact_note: 
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Y. Isabel Liu - PhD Applicant in Robotics. Princeton University Computer Science undergraduate researching task and motion planning, dexterous manipulation, and learning for robotics.
+  Y. Isabel Liu - PhD student at MIT CSAIL working on robots that reason under uncertainty and spend limited perception, computation, and action resources wisely.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: robotics, task-and-motion-planning, machine-learning, dexterous-manipulation, phd-applicant # add your own keywords or leave empty
+keywords: robotics, planning, decision-making, uncertainty, task-and-motion-planning, robot-learning, MIT CSAIL # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🤖 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -316,11 +316,14 @@ filtered_bibtex_keywords:
     pdf,
     poster,
     preview,
+    preview_video,
     selected,
     slides,
     supp,
     video,
     website,
+    workshop,
+    workshop_url,
     year_display,
   ]
 

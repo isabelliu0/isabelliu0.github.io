@@ -1,0 +1,24 @@
+<!-- ============ CONTACT ============ -->
+{%- assign socials = site.data.socials -%}
+<section id="contact" class="section">
+  <h2 class="section-title">Contact</h2>
+  <dl class="contact-grid">
+    {% if page.email %}
+      <dt><i class="fa-solid fa-envelope"></i> Email</dt>
+      <dd>
+        <a href="#contact" class="js-email" data-u="{{ email_u }}" data-d="{{ email_d }}">{{ email_text }}</a>
+      </dd>
+    {% endif %}
+    <dt><i class="fa-solid fa-share-nodes"></i> Social Media</dt>
+    <dd class="contact-links">
+      {% if socials.scholar_userid %}
+        <a href="https://scholar.google.com/citations?user={{ socials.scholar_userid }}">Google Scholar</a>
+      {% endif %}
+      {% if socials.github_username %}<a href="https://github.com/{{ socials.github_username }}">GitHub</a>{% endif %}
+      {% if socials.linkedin_username %}
+        <a href="https://www.linkedin.com/in/{{ socials.linkedin_username }}">LinkedIn</a>
+      {% endif %}
+      {% if socials.x_username %}<a href="https://x.com/{{ socials.x_username }}">X</a>{% endif %}
+    </dd>
+  </dl>
+</section>

@@ -1,0 +1,166 @@
+<!doctype html>
+{%- assign socials = site.data.socials -%}
+{%- assign awards = site.data.awards -%}
+{%- comment -%}
+  Email obfuscation: the plain address never appears in the HTML. Links carry the two halves
+  reversed in data attributes and assets/js/home.js builds the mailto: only when clicked.
+{%- endcomment -%}
+{%- if page.email -%}
+  {%- assign email_parts = page.email | split: '@' -%}
+  {%- assign email_u = email_parts[0] | split: '' | reverse | join: '' -%}
+  {%- assign email_d = email_parts[1] | split: '' | reverse | join: '' -%}
+  {%- capture email_text -%}{{ email_parts[0] }} [at] {{ email_parts[1] | replace: '.', ' [dot] ' }}{%- endcapture -%}
+{%- endif -%}
+{%- assign show_awards = false -%}
+{%- if awards.size > 0 or jekyll.environment == 'development' -%}
+  {%- assign show_awards = true -%}
+{%- endif -%}
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ site.description | strip_newlines | strip }}">
+    <meta name="keywords" content="{{ site.keywords }}">
+    <meta name="author" content="{{ page.title }}">
+    <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ site.description | strip_newlines | strip }}">
+    <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/">
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ page.photo }}">
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Lora:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+
+    <script>
+      // Apply the saved/system theme before first paint to avoid a flash.
+      (function () {
+        var t = null;
+        try { t = localStorage.getItem('theme'); } catch (e) {}
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <header class="topbar">
+      <nav class="topbar-inner" aria-label="Sections">
+        <a class="wordmark" href="#home">{{ site.first_name }} {{ site.last_name | split: ' ' | first }}</a>
+        <ul class="tabs">
+          <li><a href="#home" class="tab">Home</a></li>
+          <li><a href="#research" class="tab">Research</a></li>
+          <li><a href="#news" class="tab">News</a></li>
+          <li><a href="#publications" class="tab">Publications</a></li>
+          {% if show_awards %}<li><a href="#awards" class="tab">Awards</a></li>{% endif %}
+          <li><a href="#contact" class="tab">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <i class="fa-solid fa-moon icon-moon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- ============ HOME ============ -->
+      <section id="home" class="section hero">
+        <div class="hero-text">
+          <h1 class="name">
+            {{ page.title }}
+            {% if page.name_native %}<span class="name-native">{{ page.name_native }}</span>{% endif %}
+          </h1>
+          <p class="position">
+            {{ page.position }} @
+            <a href="{{ page.affiliation_url }}">{{ page.affiliation }}</a>
+          </p>
+          <div class="bio">{{ content }}</div>
+
+          <ul class="links">
+            {% if page.email %}
+              <li>
+                <a href="#contact" class="js-email" data-u="{{ email_u }}" data-d="{{ email_d }}"
+                  ><i class="fa-solid fa-envelope"></i>Email</a
+                >
+              </li>
+            {% endif %}
+            {% if socials.scholar_userid %}
+              <li>
+                <a href="https://scholar.google.com/citations?user={{ socials.scholar_userid }}"
+                  ><i class="fa-solid fa-graduation-cap"></i>Google Scholar</a
+                >
+              </li>
+            {% endif %}
+            {% if socials.github_username %}
+              <li>
+                <a href="https://github.com/{{ socials.github_username }}"><i class="fa-brands fa-github"></i>GitHub</a>
+              </li>
+            {% endif %}
+            {% if socials.linkedin_username %}
+              <li>
+                <a href="https://www.linkedin.com/in/{{ socials.linkedin_username }}"
+                  ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
+                >
+              </li>
+            {% endif %}
+            {% if socials.x_username %}
+              <li>
+                <a href="https://x.com/{{ socials.x_username }}"><i class="fa-brands fa-x-twitter"></i>X</a>
+              </li>
+            {% endif %}
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <img
+            class="photo"
+            src="{{ '/assets/img/' | append: page.photo | relative_url }}"
+            alt="Photo of {{ page.title }}"
+            width="320"
+            height="320"
+          >
+        </aside>
+      </section>
+
+      {% include home/education.liquid %}
+      {% include home/research.liquid %}
+      {% include home/news.liquid %}
+
+      <!-- ============ PUBLICATIONS ============ -->
+      <section id="publications" class="section">
+        <h2 class="section-title">Publications</h2>
+        <div class="pubs">
+          {% bibliography --template home_bib --group_by none %}
+        </div>
+      </section>
+
+      {% if show_awards %}
+        {% include home/awards.liquid %}
+      {% endif %}
+
+      {% include home/contact.liquid %}
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        © {{ 'now' | date: '%Y' }} {{ page.title }} · Last updated {{ site.time | date: '%b %Y' }}
+      </div>
+    </footer>
+
+    <script src="{{ '/assets/js/home.js' | relative_url }}" defer></script>
+  </body>
+</html>

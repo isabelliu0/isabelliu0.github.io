@@ -10,7 +10,7 @@
 # bluesky_url: # your bluesky URL
 # dblp_url: # your DBLP profile url
 # discord_id: # your discord id (18-digit unique numerical identifier)
-email: isabel.liu@princeton.edu # your email address
+# email: # (intentionally unset: the homepage shows an obfuscated email from _pages/about.md; setting it here would publish it unprotected in search-data.js)
 # facebook_id: # your facebook id
 # flickr_id: # your flickr id
 github_username: isabelliu0 # your GitHub user name
@@ -34,7 +34,7 @@ linkedin_username: yijieisabelliu # your LinkedIn user name
 # quora_username: # your Quora username
 # research_gate_profile: # your profile on ResearchGate
 rss_icon: false # comment this line to hide the RSS icon
-scholar_userid: gEN1Q_4AAAAJ # your Google Scholar ID
+scholar_userid: SDKyx44AAAAJ # your Google Scholar ID
 # scopus_id: # your profile on Scopus
 # semanticscholar_id: # your Semantic Scholar ID
 # spotify_id: # your spotify id

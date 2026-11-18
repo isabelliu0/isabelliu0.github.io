@@ -1,0 +1,22 @@
+# Research section of the home page.
+# `statement` is the main paragraph (markdown).
+# `tools_intro` + `tools` render as the lead-in sentence and bulleted list below it.
+
+statement: >-
+  General-purpose robots must operate effectively in partially observable, shared and dynamic
+  environments. To do so, a robot needs to make effective decisions about what information to acquire,
+  how to represent it, how much computation to perform and when to act, given limited resources.
+  I consider these decisions together, since they draw on a finite resource budget. Humans naturally
+  make such trade-offs. My research goal is to understand the underlying principles, and enable robots to
+  perform such trade-offs effectively.
+
+tools_intro: >-
+  Some tools we can leverage are:
+
+tools:
+  - title: Reasoning about the state of the world
+    text: Probabilistic and simulation-based models allow the robot to reason about its knowledge and uncertainty.
+  - title: Reasoning about actions
+    text: Foundation models provide general knowledge, while planning algorithms enable the robot to reliably perform long-horizon actions.
+  - title: Efficient resource allocation
+    text: Decision theory allows us to efficiently trade off the value of gathering additional information, or performing more reasoning.

@@ -1,0 +1,31 @@
+# News items shown in the scrolling News box (newest first).
+# `date` is free text (e.g. "Jan 2026"); `text` is markdown.
+# `icon` is optional: paper | award | talk | school | news (default)
+
+- date: Sep 2026
+  icon: school
+  text: "Joined the [Learning and Intelligent Systems (LIS) group](https://lis.csail.mit.edu/) at MIT CSAIL, advised by [Prof. Leslie Kaelbling](https://people.csail.mit.edu/lpk/) and [Prof. Tomás Lozano-Pérez](https://people.csail.mit.edu/tlp/)!"
+
+- date: Sep 2026
+  icon: paper
+  text: "[Demystifying When and Why VLAs Fail in Contact-Rich Tasks and How to Fix Them](https://arxiv.org/abs/2608.01402) was accepted to **CoRL 2026** as a **Spotlight**!"
+
+- date: Sep 2026
+  icon: paper
+  text: "[Recover, Discover, Plan: Learning Skills and Concepts from Robot Failures](https://arxiv.org/abs/2606.18328) was accepted to **CoRL 2026**!"
+
+- date: May 2026
+  icon: award
+  text: "Graduated from Princeton with **Highest Honors** in Computer Science!"
+
+- date: Jan 2026
+  icon: paper
+  text: "[SLAP: Shortcut Learning for Abstract Planning](https://arxiv.org/abs/2511.01107) was accepted to **ICLR 2026**!"
+
+- date: Jan 2026
+  icon: award
+  text: "Received an Honorable Mention for the [CRA Outstanding Undergraduate Researcher Award](https://cra.org/crn/2026/01/2025-26-cra-outstanding-undergraduate-researcher-award-recipients-announced/)!"
+
+- date: Dec 2025
+  icon: paper
+  text: "[Flash STU: Fast Spectral Transform Units](https://arxiv.org/abs/2409.10489) was published at the **IEEE Conference on Decision and Control (CDC) 2025**!"

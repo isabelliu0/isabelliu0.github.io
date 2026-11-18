@@ -1,0 +1,23 @@
+<!-- ============ EDUCATION (part of Home) ============ -->
+<section class="section" aria-labelledby="education-title">
+  <h2 class="section-title" id="education-title">Education</h2>
+  <ul class="timeline">
+    {% for edu in site.data.education %}
+      <li class="timeline-item">
+        <div class="timeline-head">
+          <div>
+            <span class="item-title">{{ edu.degree }}</span>
+          </div>
+          <span class="date">{{ edu.dates }}</span>
+        </div>
+        <div class="item-sub">
+          {% if edu.url %}<a href="{{ edu.url }}">{{ edu.school }}</a>{% else %}{{ edu.school }}{% endif %}
+          {%- if edu.location %}<span class="muted">, {{ edu.location }}</span>{% endif %}
+        </div>
+        {% for line in edu.details %}
+          <div class="item-detail">{{ line | markdownify | remove: '<p>' | remove: '</p>' | strip }}</div>
+        {% endfor %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>

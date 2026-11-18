@@ -1,0 +1,21 @@
+<!-- ============ AWARDS ============ -->
+<section id="awards" class="section">
+  <h2 class="section-title">Awards &amp; Honors</h2>
+  {% if site.data.awards.size > 0 %}
+    <ul class="awards">
+      {% for a in site.data.awards %}
+        <li>
+          {%- if a.url -%}<a href="{{ a.url }}">{{ a.title }}</a>{%- else -%}{{ a.title }}{%- endif -%}
+          {%- if a.detail %} ({{ a.detail }}){% endif -%}
+          {%- if a.org %}, {{ a.org }}{% endif -%}
+          {%- if a.year %}, {{ a.year }}{% endif -%}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="placeholder">
+      Add your awards to <code>_data/awards.yml</code>. This reminder only shows in local preview; until the list
+      has entries, the Awards section and tab are hidden on the live site.
+    </p>
+  {% endif %}
+</section>

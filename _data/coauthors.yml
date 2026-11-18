@@ -1,34 +1,30 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+# Co-author homepages: their names become links in the Publications list.
+# Key = last name (lowercase, no accents); firstname = every spelling used in papers.bib.
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"silver":
+  - firstname: ["Tom", "T."]
+    url: https://tomsilver.github.io/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"li":
+  - firstname: ["Bowen", "B."]
+    url: https://jaraxxus-me.github.io/
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"eysenbach":
+  - firstname: ["Benjamin", "Ben", "B."]
+    url: https://ben-eysenbach.github.io/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"hazan":
+  - firstname: ["Elad", "E."]
+    url: https://www.ehazan.com/
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"majumdar":
+  - firstname: ["Anirudha", "A."]
+    url: https://irom-lab.princeton.edu/majumdar/
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"bohg":
+  - firstname: ["Jeannette", "J."]
+    url: https://web.stanford.edu/~bohg/
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"kumar":
+  - firstname: ["Nishanth", "N."]
+    url: https://nishanthjkumar.com/

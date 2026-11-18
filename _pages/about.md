@@ -1,34 +1,15 @@
 ---
-layout: about
-title: about
+layout: home
+title: Y. Isabel Liu
 permalink: /
-subtitle: Computer Science @ <a href='https://www.princeton.edu/'>Princeton University</a>
 
-profile:
-  align: right
-  image: profile.png
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>isabel.liu@princeton.edu</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: false # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+# Shown under your name in the header and photo card
+name_native: 刘亦颉
+position: PhD Student
+affiliation: MIT CSAIL
+affiliation_url: https://www.csail.mit.edu/
+photo: profile-pic.png
+email: isabeliu@csail.mit.edu
 ---
 
-I am a fourth-year undergraduate student at Princeton University majoring in Computer Science with minors in Mathematics and Optimization & Quantitative Decision Science. I am applying to PhD programs in Robotics for Fall 2026.
-
-My research focuses on **hierarchical planning and learning for real-world robot manipulation**. I am particularly interested in algorithms that enable robots to reason about uncertainty, learn from experience, and perform complex manipulation tasks by integrating symbolic planning with low-level control.
-
-Currently, I am working with [Professor Tom Silver](https://tomsilver.github.io/) at Princeton's [PRPL Lab](https://prpl.group/) on belief-space planning in POMDPs. I am also collaborating with [Professor Jeannette Bohg](https://web.stanford.edu/~bohg/) at Stanford's [IPRL Lab](https://iprl.stanford.edu/) on dexterous manipulation with tactile sensing.
-
-Beyond research, I am Co-President of [AI@Princeton](https://www.aiatprinceton.com/), the university’s largest undergraduate AI community, dedicated to empowering students to engage in cutting-edge AI research and engineering.
+Hi there! I'm a first-year PhD student at [MIT CSAIL](https://www.csail.mit.edu/) and [EECS](https://www.eecs.mit.edu/), advised by [Prof. Leslie Kaelbling](https://people.csail.mit.edu/lpk/) and [Prof. Tomás Lozano-Pérez](https://people.csail.mit.edu/tlp/). Prior to MIT, I obtained my bachelor's degree in CS and Math from Princeton University, where I worked with [Prof. Tom Silver](https://tomsilver.github.io/), [Prof. Benjamin Eysenbach](https://ben-eysenbach.github.io/), and [Prof. Elad Hazan](https://www.ehazan.com/).
